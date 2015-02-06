@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B77A0BD1A7D842D000C7598 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B77A0BC1A7D842D000C7598 /* Realm.framework */; };
+		0B77A0C21A7D843E000C7598 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B77A0C11A7D843E000C7598 /* libc++.dylib */; };
+		0B77A0C41A7D844E000C7598 /* RLMSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B77A0C31A7D844E000C7598 /* RLMSupport.swift */; };
 		0BD4BF941A7B600100EDCCF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4BF931A7B600100EDCCF8 /* AppDelegate.swift */; };
 		0BD4BF961A7B600100EDCCF8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4BF951A7B600100EDCCF8 /* FirstViewController.swift */; };
 		0BD4BF981A7B600100EDCCF8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4BF971A7B600100EDCCF8 /* SecondViewController.swift */; };
@@ -14,6 +17,7 @@
 		0BD4BF9D1A7B600100EDCCF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BD4BF9C1A7B600100EDCCF8 /* Images.xcassets */; };
 		0BD4BFA01A7B600100EDCCF8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD4BF9E1A7B600100EDCCF8 /* LaunchScreen.xib */; };
 		0BD4BFAC1A7B600100EDCCF8 /* DLMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4BFAB1A7B600100EDCCF8 /* DLMTests.swift */; };
+		0BD4BFC91A7B65B000EDCCF8 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD4BFBF1A7B654F00EDCCF8 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,9 +28,61 @@
 			remoteGlobalIDString = 0BD4BF8D1A7B600100EDCCF8;
 			remoteInfo = DLM;
 		};
+		0BD4BFBE1A7B654F00EDCCF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BD4BFB71A7B654F00EDCCF8 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		0BD4BFC01A7B654F00EDCCF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BD4BFB71A7B654F00EDCCF8 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		0BD4BFC21A7B654F00EDCCF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BD4BFB71A7B654F00EDCCF8 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		0BD4BFC41A7B654F00EDCCF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BD4BFB71A7B654F00EDCCF8 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		0BD4BFC61A7B657500EDCCF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BD4BFB71A7B654F00EDCCF8 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0BD4BFC81A7B659500EDCCF8 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0BD4BFC91A7B65B000EDCCF8 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0B77A0BC1A7D842D000C7598 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		0B77A0C11A7D843E000C7598 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		0B77A0C31A7D844E000C7598 /* RLMSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLMSupport.swift; sourceTree = "<group>"; };
 		0BD4BF8E1A7B600100EDCCF8 /* DLM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD4BF921A7B600100EDCCF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BD4BF931A7B600100EDCCF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +94,7 @@
 		0BD4BFA51A7B600100EDCCF8 /* DLMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD4BFAA1A7B600100EDCCF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BD4BFAB1A7B600100EDCCF8 /* DLMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLMTests.swift; sourceTree = "<group>"; };
+		0BD4BFB71A7B654F00EDCCF8 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B77A0C21A7D843E000C7598 /* libc++.dylib in Frameworks */,
+				0B77A0BD1A7D842D000C7598 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +120,7 @@
 		0BD4BF851A7B600100EDCCF8 = {
 			isa = PBXGroup;
 			children = (
+				0B77A0C11A7D843E000C7598 /* libc++.dylib */,
 				0BD4BF901A7B600100EDCCF8 /* DLM */,
 				0BD4BFA81A7B600100EDCCF8 /* DLMTests */,
 				0BD4BF8F1A7B600100EDCCF8 /* Products */,
@@ -93,6 +153,9 @@
 		0BD4BF911A7B600100EDCCF8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0B77A0C31A7D844E000C7598 /* RLMSupport.swift */,
+				0B77A0BC1A7D842D000C7598 /* Realm.framework */,
+				0BD4BFB71A7B654F00EDCCF8 /* Alamofire.xcodeproj */,
 				0BD4BF921A7B600100EDCCF8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -115,6 +178,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0BD4BFB81A7B654F00EDCCF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BD4BFBF1A7B654F00EDCCF8 /* Alamofire.framework */,
+				0BD4BFC11A7B654F00EDCCF8 /* Alamofire.framework */,
+				0BD4BFC31A7B654F00EDCCF8 /* Alamofire iOS Tests.xctest */,
+				0BD4BFC51A7B654F00EDCCF8 /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +199,12 @@
 				0BD4BF8A1A7B600100EDCCF8 /* Sources */,
 				0BD4BF8B1A7B600100EDCCF8 /* Frameworks */,
 				0BD4BF8C1A7B600100EDCCF8 /* Resources */,
+				0BD4BFC81A7B659500EDCCF8 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0BD4BFC71A7B657500EDCCF8 /* PBXTargetDependency */,
 			);
 			name = DLM;
 			productName = DLM;
@@ -182,6 +258,12 @@
 			mainGroup = 0BD4BF851A7B600100EDCCF8;
 			productRefGroup = 0BD4BF8F1A7B600100EDCCF8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0BD4BFB81A7B654F00EDCCF8 /* Products */;
+					ProjectRef = 0BD4BFB71A7B654F00EDCCF8 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0BD4BF8D1A7B600100EDCCF8 /* DLM */,
@@ -189,6 +271,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0BD4BFBF1A7B654F00EDCCF8 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 0BD4BFBE1A7B654F00EDCCF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BD4BFC11A7B654F00EDCCF8 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 0BD4BFC01A7B654F00EDCCF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BD4BFC31A7B654F00EDCCF8 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 0BD4BFC21A7B654F00EDCCF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BD4BFC51A7B654F00EDCCF8 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 0BD4BFC41A7B654F00EDCCF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0BD4BF8C1A7B600100EDCCF8 /* Resources */ = {
@@ -218,6 +331,7 @@
 				0BD4BF981A7B600100EDCCF8 /* SecondViewController.swift in Sources */,
 				0BD4BF941A7B600100EDCCF8 /* AppDelegate.swift in Sources */,
 				0BD4BF961A7B600100EDCCF8 /* FirstViewController.swift in Sources */,
+				0B77A0C41A7D844E000C7598 /* RLMSupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +350,11 @@
 			isa = PBXTargetDependency;
 			target = 0BD4BF8D1A7B600100EDCCF8 /* DLM */;
 			targetProxy = 0BD4BFA61A7B600100EDCCF8 /* PBXContainerItemProxy */;
+		};
+		0BD4BFC71A7B657500EDCCF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 0BD4BFC61A7B657500EDCCF8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -340,6 +459,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DLM",
+				);
 				INFOPLIST_FILE = DLM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +473,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DLM",
+				);
 				INFOPLIST_FILE = DLM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +536,7 @@
 				0BD4BFB11A7B600100EDCCF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BD4BFB21A7B600100EDCCF8 /* Build configuration list for PBXNativeTarget "DLMTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +545,7 @@
 				0BD4BFB41A7B600100EDCCF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
